@@ -1,4 +1,4 @@
-# SCAPT_ABSA
+# SCAPT-ABSA
 
 Code for EMNLP2021 paper: ["Learning Implicit Sentiment in Aspect-based Sentiment Analysis with Supervised Contrastive Pre-Training"](https://aclanthology.org/2021.emnlp-main.22.pdf)
 
@@ -11,7 +11,7 @@ In our work, we define implicit sentiment as sentiment expressions that contain 
 
 Here are examples for explicit and implicit sentiment in ABSA:
 
-<div align="center"> <img src="https://user-images.githubusercontent.com/18156002/141302386-f01278fd-7a3d-4aa5-a6fc-fff99b649530.png" alt="examples" style="max-width: 80%;" /></div>
+<div align="center"> <img src="https://user-images.githubusercontent.com/18156002/141302386-f01278fd-7a3d-4aa5-a6fc-fff99b649530.png" alt="examples" width="60%" /></div>
 
 ### SCAPT
 
@@ -21,13 +21,13 @@ SCAPT gives an aligned representation of sentiment expressions with the same sen
 - Review Reconstruction (RR)
 - Masked Aspect Prediction (MAP)
 
-<div align="center"> <img src="https://user-images.githubusercontent.com/18156002/141302933-eb644d3d-cc5a-4ce9-8059-81a01395c366.png" alt="SCAPT" style="max-width: 90%;" /></div>
+<div align="center"> <img src="https://user-images.githubusercontent.com/18156002/141302933-eb644d3d-cc5a-4ce9-8059-81a01395c366.png" alt="SCAPT" width="95%" /></div>
 
 ### Aspect-aware Fine-tuning
 
 Sentiment representation and aspect-based representation are taken into account for sentiment prediction in aspect-aware fine-tuning.
 
-<div align="center"> <img src="https://user-images.githubusercontent.com/18156002/141303033-c5b32e3c-5bf0-469b-ad72-0a0212a992ba.png" alt="Aspect_fine-tuning" style="max-width: 90%;" /></div>
+<div align="center"> <img src="https://user-images.githubusercontent.com/18156002/141303033-c5b32e3c-5bf0-469b-ad72-0a0212a992ba.png" alt="Aspect_fine-tuning" width="50%" /></div>
 
 ## Requirement
 
