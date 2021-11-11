@@ -129,13 +129,13 @@ Model checkpoints are saved in `results`.
 
 ## Fine-tuning
 
-- Directly train [TransEnc|BERT] on [Restaurants|Laptops|MAMS] As [TransAsp|BERTAsp]:
+- Directly train [TransEnc|BERT] on [Restaurants|Laptops|MAMS] As [TransEncAsp|BERTAsp]:
 
   ```bash
   python train.py --config config/[restaurants|laptops|mams]_[TransEnc|BERT]_finetune.yml
   ```
 
-- Fine-tune the pre-trained [TransEnc|BERT] on [Restaurants|Laptops|MAMS] As [TransAsp+SCAPT|BERTAsp+SCAPT]:
+- Fine-tune the pre-trained [TransEnc|BERT] on [Restaurants|Laptops|MAMS] As [TransEncAsp+SCAPT|BERTAsp+SCAPT]:
 
   ```bash
   python train.py --config config/[restaurants|laptops|mams]_[TransEnc|BERT]_finetune.yml --checkpoint PATH/TO/MODEL_CHECKPOINT
