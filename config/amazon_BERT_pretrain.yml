@@ -1,0 +1,31 @@
+mode: fp16_multi_pretrain
+model: BERT
+
+data_path: data/Amazon
+pretrain_file: amazon_laptops_preprocess_pretrain.pkl
+model_path: results/Amazon
+num_workers_per_loader: 16
+
+seed: 42
+batch_size: 16
+dropout: 0.1
+epoch: 8
+report_frequency: 100
+save_frequency: 5000
+
+decoder_heads: 6
+decoder_layers: 6
+decoder_hidden: 768
+decoder_ff: 2048
+decoder_dropout: 0.2
+share_emb: True
+
+optimizer: adamw
+lambda_scl: 2.0
+lambda_map: 1.0
+lambda_rr: 1.0
+learning_rate: 0.00005
+learning_rate_bert: 0.00005
+weight_decay: 0.00005
+warm_up: 20000
+grad_norm: 5.0

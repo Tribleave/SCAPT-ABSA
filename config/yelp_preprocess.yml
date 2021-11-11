@@ -1,0 +1,8 @@
+mode: preprocess_pretrain
+base_path: data/YELP
+
+train_file: yelp_restaurants.json
+
+lowercase: True
+remove_list:
+  - conflict

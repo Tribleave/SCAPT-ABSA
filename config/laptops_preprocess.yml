@@ -1,0 +1,9 @@
+mode: preprocess_finetune
+base_path: data/laptops
+
+train_file: Laptops_Train_v2_Implicit_Labeled.xml
+test_file: Laptops_Test_Gold_Implicit_Labeled.xml
+
+lowercase: True
+remove_list:
+  - conflict

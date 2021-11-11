@@ -1,0 +1,8 @@
+mode: preprocess_pretrain
+base_path: data/Amazon
+
+train_file: amazon_laptops.json
+
+lowercase: True
+remove_list:
+  - conflict

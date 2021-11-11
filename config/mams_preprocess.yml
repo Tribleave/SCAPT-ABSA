@@ -1,0 +1,10 @@
+mode: preprocess_finetune
+base_path: data/MAMS
+
+train_file: train.xml
+dev_file: val.xml
+test_file: test.xml
+
+lowercase: True
+remove_list:
+  - conflict

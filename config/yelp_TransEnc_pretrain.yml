@@ -1,0 +1,37 @@
+mode: fp16_multi_pretrain
+model: TransEnc
+
+data_path: data/YELP
+pretrain_file: yelp_restaurants_preprocess_pretrain.pkl
+model_path: results/YELP
+num_workers_per_loader: 16
+
+seed: 42
+batch_size: 16
+dropout: 0.1
+epoch: 80
+report_frequency: 100
+save_frequency: 5000
+
+head_size: 6
+layers: 6
+hidden_size: 300
+feedforward: 1200
+dense_hidden_size: 100
+
+decoder_heads: 6
+decoder_layers: 6
+decoder_hidden: 300
+decoder_ff: 1200
+decoder_dropout: 0.2
+share_emb: True
+
+optimizer: adamw
+lambda_scl: 2.0
+lambda_map: 1.0
+lambda_rr: 1.0
+learning_rate: 0.001
+learning_rate_bert: 0.001
+weight_decay: 0.001
+warm_up: 40000
+grad_norm: 5.0

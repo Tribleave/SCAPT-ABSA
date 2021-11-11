@@ -1,0 +1,22 @@
+mode: aspect_finetune
+model: BERT
+
+device: 0
+data_path: data/MAMS
+model_path: results/MAMS
+train_file: train_preprocess_finetune.pkl
+dev_file: val_preprocess_finetune.pkl
+test_file: test_preprocess_finetune.pkl
+num_workers_per_loader: 16
+
+seed: 42
+batch_size: 32
+dropout: 0.1
+epoch: 8
+warm_up: 680
+label_smooth: 0.01
+
+optimizer: adamw
+learning_rate: 0.00005
+weight_decay: 0.015
+grad_norm: 5.0
