@@ -15,7 +15,7 @@ Here are examples for explicit and implicit sentiment in ABSA:
 
 ### SCAPT
 
-SCAPT gives an aligned representation of sentiment expressions with the same sentiment label, which consists of three obectives:
+SCAPT gives an aligned representation of sentiment expressions with the same sentiment label, which consists of three objectives:
 
 - Supervised Contrastive Learning (SCL)
 - Review Reconstruction (RR)
@@ -45,7 +45,7 @@ Sentiment representation and aspect-based representation are taken into account 
 ### For Pre-training
 
 Retrieved sentiment corpora contain millions-level reviews, we provide download links for original corpora and preprocessed data.
-Download if you want to do pre-training and furthur use them:
+Download if you want to do pre-training and further use them:
 
 | File | Google Drive Link | Baidu Wangpan Link | Baidu Wangpan Code |
 | :--: | :--: | :--: | :--: |
@@ -54,7 +54,7 @@ Download if you want to do pre-training and furthur use them:
 | scapt_yelp_pkl.zip | [link](https://drive.google.com/file/d/14omB11atNl1k6G66Du74kH9Qy2_z5yZO/view?usp=sharing) | [link](https://pan.baidu.com/s/1IIQHTIsXjhNYDTXa3vHs0Q) | j9ce |
 | scapt_amazon_pkl.zip | [link](https://drive.google.com/file/d/1Vwr3SN4nl0uC3rpt2O4hrd7DJ5jDG0U0/view?usp=sharing) | [link](https://pan.baidu.com/s/1ezhzs1Mmr0clL_7bJBgNyw) | 3b8t |
 
-These pickle files can also be generated from json files by preprocessing method:
+These pickle files can also be generated from json files by the preprocessing method:
 
 ```bash
 bash preprocess.py --pretrain
@@ -62,7 +62,7 @@ bash preprocess.py --pretrain
 
 ### For Fine-tuning
 
-We have already combine opinion term lebeling to original SemEval2014 dataset. For example:
+We have already combined the opinion term labeling to the original SemEval2014 datasets. For example:
 
 ```xml
     <sentence id="1634">
@@ -78,10 +78,10 @@ We have already combine opinion term lebeling to original SemEval2014 dataset. F
     </sentence>
 ```
 
-`implicit_sentiment` indicates whether it is a implicit sentiment expression and yield `opinion_words` if not implicit.
+`implicit_sentiment` indicates whether it is an implicit sentiment expression and yield `opinion_words` if not implicit.
 The `opinion_words` lebaling is credited to [TOWE](https://github.com/NJUNLP/TOWE).
 
-Both original and extended fine-tuning data, and preprocessed dumps are uploaded in this repository.
+Both original and extended fine-tuning data and preprocessed dumps are uploaded to this repository.
 
 Consequently, the structure of your `data` directory should be:
 
@@ -117,7 +117,7 @@ Consequently, the structure of your `data` directory should be:
 
 ## Pre-training
 
-The pre-training are conducted on multiple GPUs.
+The pre-training is conducted on multiple GPUs.
 
 - Pre-training [TransEnc|BERT] on [YELP|Amazon]:
   
