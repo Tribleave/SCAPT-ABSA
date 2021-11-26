@@ -10,7 +10,7 @@ parser.add_argument('--checkpoint', help='path to model checkpoint')
 args = parser.parse_args()
 
 config = yaml.safe_load(open(args.config))
-if 'checkpoint' in config:
+if 'checkpoint' in args:
     config['checkpoint'] = args.checkpoint
 
 train(config)
